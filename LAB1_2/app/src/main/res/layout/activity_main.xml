@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This XML is first screen-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--This is TableLayout with TextView and EditText-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+            <!--This is widget for one you want to see. -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"/>
+
+            <!--This is widget for one you want to write. -->
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="type your name"/>
+        </TableRow>
+    </TableLayout>
+
+    <!--This is RelativeLayout with Button and TextView -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--This is widget for clear all text. -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clearClicked"
+            android:text="CLEAR"
+            />
+
+        <!--This is widget for print all text. -->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button1"
+            android:onClick="printClicked"
+            android:text="PRINT"
+            />
+
+        <!--This is widget for printed text -->
+        <TextView
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:text="contents" />
+    </RelativeLayout>
+</LinearLayout>
+
+
