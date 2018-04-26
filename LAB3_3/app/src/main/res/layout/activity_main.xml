@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This XML is first screen-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- This layout shows two button-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--This widget changes to fragment1-->
+        <Button
+            android:id="@+id/btn_frag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAB1"/>
+
+        <!--This widget changes to fragment2-->
+        <Button
+            android:id="@+id/btn_frag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAB2"/>
+    </LinearLayout>
+
+    <!--This layout shows fragment-->
+    <FrameLayout
+        android:id="@+id/framelayout_for_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This XML is first screen-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- This XML is first line layout-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--This widget can show text-->
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="@string/name"/>
+
+        <!--This widget can write own name-->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- This XML is second line layout-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--This widget can show text-->
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"/>
+
+        <!--This widget group RadioButton-->
+        <RadioGroup
+            android:id="@+id/RadioGroup_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--This widget show checking option-->
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남"/>
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- This XML is third line layout-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--This widget can show text-->
+        <TextView
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="@string/msg"/>
+
+        <!--This widget show checking option-->
+        <CheckBox
+            android:id="@+id/msg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS"/>
+        <CheckBox
+            android:id="@+id/msg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e-mail"/>
+    </LinearLayout>
+
+    <!-- This XML is fourth line layout-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--This widget call activity_register.xml-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록"/>
+    </LinearLayout>
+
+</LinearLayout>
