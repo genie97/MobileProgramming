@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- base layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#FF029ACB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Base Area"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- sliding layout -->
+    <LinearLayout
+        android:id="@+id/slidingPage"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#669a02"
+        android:visibility="gone"
+        android:layout_gravity="right">
+        <TextView
+            android:text="Sliding Area"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- button for open or close -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button"
+            android:text="OPEN PAGE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClicked"/>
+    </LinearLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--After finishing animation, maintain its status-->
+<!-- android:interpolator="@android:anim/accelerate_decelerate_interpolator" The animation works faster and slower-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+    <!--Moving from right to left for 0.5 second. -->
+    <translate
+        android:fromXDelta="100%p"
+        android:toXDelta="0%"
+        android:duration="500"
+        android:repeatCount="0"/>
+</set>
