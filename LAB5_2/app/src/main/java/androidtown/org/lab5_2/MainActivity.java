@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     EditText editText;
 
     String initValue = "";
-    String numberStr = "";
     int initCount = 0;
     int result = 1;
 
