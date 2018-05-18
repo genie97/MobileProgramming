@@ -21,12 +21,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        /*initial widget*/
         imageView1 = (ImageView) findViewById(R.id.imageView1);
         imageView2 = (ImageView) findViewById(R.id.imageView2);
         editText = (EditText) findViewById(R.id.editText);
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
+            /*button event*/
             public void onClick(View v) {
                 DogThread thread1 = new DogThread(0);
                 thread1.start();
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         int stateIndex;
         ArrayList<Integer> images = new ArrayList<Integer>();
 
+        /*Add image*/
         public DogThread(int index) {
             dogIndex = index;
             images.add(R.drawable.dog_eating);
@@ -48,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             images.add(R.drawable.dog_study);
         }
 
+        /*Thread run*/
         public void run() {
             stateIndex = 0;
             for (int i = 0; i < 9; i++) {
@@ -76,9 +80,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /*random time*/
     public int getRandomTime(int min, int max){
         return min+(int)(Math.random() * (max-min));
     }
 
 }
-
