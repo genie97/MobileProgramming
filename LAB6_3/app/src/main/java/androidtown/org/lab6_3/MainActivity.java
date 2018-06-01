@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         c.close();
     }
 
-    /*update ad show data in list view*/
+    /*update and show data in list view*/
     private void invalidate() {
         select();
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, studentInfo);
